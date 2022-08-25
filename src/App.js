@@ -6,8 +6,9 @@ import Navbar from './Navbar';
 import Pricing from './Home_pages/pricing';
 import About from './Home_pages/About'
 const App = ()=>{
+  let path = window.location.pathname;
   let component   
-     switch(window.location.pathname){
+     switch(path){
       case "/":
         component = <Home/>
         break
